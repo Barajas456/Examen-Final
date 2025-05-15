@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <figure><img src="images.jpg" alt="Logo de perfil"></figure>
+        <h1 class="inscri">Formulario de Inscripción de Familiares</h1>
+      </header>
+      
+      <section class="form"><h2>Formulario:</h2></section>
+      <p>Inscriba aquí a los familiares</p>
+      <form method="post">
+        <label for="Primer Nombre"><strong>Primer Nombre:</strong></label>
+        <input
+          type="text"
+          id="Pimer Nombre"
+          name="Primer Nombre"
+          required
+        /><br /><br />
+        <label for="Segundo Nombre"><strong>Segundo Nombre:</strong></label>
+        <input
+          type="text"
+          id="Segundo nombre"
+          name="Segundo Nombre"
+          required
+        /><br /><br />
+        <label for="Apellidos"><strong>Apellidos:</strong></label>
+        <input
+          type="text"
+          id="Apellidos"
+          name="Apellidos"
+          required
+        /><br /><br />
+        <label for="Edad"><strong>Edad:</strong></label>
+        <input type="number" id="Edad" name="Edad" required /><br /><br />
+        <label for="Fecha de Nacimiento"
+          ><strong>Fecha de Nacimiento</strong></label
+        >
+        <input
+          type="date"
+          id="Fecha de Nacimiento"
+          name="Fecha de Nacimiento"
+          required
+        /><br /><br />
+        <label for="Celular"><strong>Celular:</strong></label>
+        <input
+          type="tel"
+          id="Teléfono"
+          name="Teléfono"
+          pattern="[0-9](10)"
+          title="Por favor, ingrese el número indicado"
+          required
+        /><br /><br />
+        <label for="Foto"><strong>Foto:</strong></label>
+        <input type="file" id="Foto" name="Foto" /><br /><br />
+        <label for="Sexo"><strong>Sexo:</strong></label
+        ><br />
+        <input
+          type="radio"
+          name="Masculino"
+          id="Masculino"
+        />Masculino<br /><br />
+        <input type="radio" name="Femenino" id="Femenino" />Femenino<br /><br />
+        <input type="radio" name="Otro" id="Otro" />Otro<br /><br />
+        <label for="Correo Electrónico"
+          ><strong>Correo Electrónico:</strong></label
+        ><br />
+        <input type="email" name="Correo" id="Correo" /><br /><br />
+
+        <input type="submit" value="Registrar" />
+      </form>
+    </main>
+  </body>
+</html>
